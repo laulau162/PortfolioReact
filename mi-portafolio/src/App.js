@@ -72,7 +72,7 @@ function App() {
         </div>
         <div className="profile-container">
           <img
-            src={process.env.PUBLIC_URL + "/images/profile.jpg"}
+            src={process.env.PUBLIC_URL + "/profile.jpg"}
             alt="Perfil"
           />
           <span className="experience-badge">3 años</span>
