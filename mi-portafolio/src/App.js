@@ -1,7 +1,16 @@
-import './App.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faPhone, faCamera, faCar, faClock, faGraduationCap, faShieldAlt, faLanguage } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import "./App.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faEnvelope,
+  faPhone,
+  faCamera,
+  faCar,
+  faClock,
+  faGraduationCap,
+  faShieldAlt,
+  faLanguage,
+} from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 function App() {
   return (
@@ -12,11 +21,21 @@ function App() {
           <span>Laura Zaballa - Front-End Developer</span>
         </div>
         <ul className="nav-links">
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#experiencia">Experiencia</a></li>
-          <li><a href="#formacion">Formación</a></li>
-          <li><a href="#sobre-mi">Sobre Mí</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#experiencia">Experiencia</a>
+          </li>
+          <li>
+            <a href="#formacion">Formación</a>
+          </li>
+          <li>
+            <a href="#sobre-mi">Sobre Mí</a>
+          </li>
+          <li>
+            <a href="#contacto">Contacto</a>
+          </li>
         </ul>
       </nav>
 
@@ -39,15 +58,23 @@ function App() {
               <p>He formado parte del equipo técnico de BBVA Technology.</p>
             </div>
           </div>
-          <p>Especialista en desarrollo web con +3 años de experiencia construyendo interfaces modernas de alto rendimiento.</p>
+          <p>
+            Especialista en desarrollo web con +3 años de experiencia
+            construyendo interfaces modernas de alto rendimiento.
+          </p>
           <p>He formado parte del equipo técnico de BBVA Technology.</p>
           <a href="#contacto">
-          <button className="contact-btn" >Contactar</button>
+            <button className="contact-btn">Contactar</button>
           </a>
-          <a href="#experiencia" className="see-experience">Ver experiencia →</a>
+          <a href="#experiencia" className="see-experience">
+            Ver experiencia →
+          </a>
         </div>
         <div className="profile-container">
-          <img src="/profile.jpg" alt="Laura Zaballa" className="profile-img" />
+          <img
+            src={process.env.PUBLIC_URL + "/images/profile.jpg"}
+            alt="Perfil"
+          />
           <span className="experience-badge">3 años</span>
         </div>
       </header>
@@ -108,7 +135,13 @@ function App() {
           <span className="date">Oct 2023 — Sep 2025</span>
           <span className="company">BBVA Technology</span>
           <h3>Desarrolladora Web Front-End</h3>
-          <p>Desarrollo de aplicaciones web SPA de alto rendimiento para uno de los principales bancos de Europa. Construcción de interfaces complejas con arquitectura de Web Components y frameworks modernos. Trabajo en entorno de gran escala con metodología ágil, code reviews y entrega continua.</p>
+          <p>
+            Desarrollo de aplicaciones web SPA de alto rendimiento para uno de
+            los principales bancos de Europa. Construcción de interfaces
+            complejas con arquitectura de Web Components y frameworks modernos.
+            Trabajo en entorno de gran escala con metodología ágil, code reviews
+            y entrega continua.
+          </p>
           <ul className="tags">
             <li>React</li>
             <li>Ember.js</li>
@@ -123,7 +156,11 @@ function App() {
           <span className="date">Mar 2023 — Oct 2023</span>
           <span className="company">Sopra Steria</span>
           <h3>Desarrolladora Web Front-End</h3>
-          <p>Desarrollo front-end en proyectos de cliente dentro de consultora tecnológica internacional. Metodología ágil con sprints y trabajo en equipo multidisciplinar.</p>
+          <p>
+            Desarrollo front-end en proyectos de cliente dentro de consultora
+            tecnológica internacional. Metodología ágil con sprints y trabajo en
+            equipo multidisciplinar.
+          </p>
           <ul className="tags">
             <li>Front-End</li>
             <li>JavaScript</li>
@@ -135,7 +172,10 @@ function App() {
           <span className="date">Jun 2022 — Mar 2023</span>
           <span className="company">Carrefour Express</span>
           <h3>Cajera / Reponedora</h3>
-          <p>Atención al cliente, gestión de caja y reposición de productos. Habilidades de comunicación y orientación al cliente.</p>
+          <p>
+            Atención al cliente, gestión de caja y reposición de productos.
+            Habilidades de comunicación y orientación al cliente.
+          </p>
         </div>
       </section>
 
@@ -190,44 +230,73 @@ function App() {
         <div className="cert-grid">
           <div className="cert-card">
             <span className="dot green"></span>
-            <p>React Avanzado <br /> Udemy</p>
+            <p>
+              React Avanzado <br /> Udemy
+            </p>
           </div>
           <div className="cert-card">
             <span className="dot green"></span>
-            <p>Angular <br /> Udemy</p>
+            <p>
+              Angular <br /> Udemy
+            </p>
           </div>
           <div className="cert-card">
             <span className="dot green"></span>
-            <p>Curso .NET <br /> 210h</p>
+            <p>
+              Curso .NET <br /> 210h
+            </p>
           </div>
           <div className="cert-card">
             <span className="dot green"></span>
-            <p>Cells & LitElement <br /> Certificado</p>
+            <p>
+              Cells & LitElement <br /> Certificado
+            </p>
           </div>
           <div className="cert-card">
             <span className="dot green"></span>
-            <p>Docencia FP <br /> Hab. 380h</p>
+            <p>
+              Docencia FP <br /> Hab. 380h
+            </p>
           </div>
           <div className="cert-card">
             <span className="dot green"></span>
-            <p>Compet. digitales <br /> 250h</p>
+            <p>
+              Compet. digitales <br /> 250h
+            </p>
           </div>
           <div className="cert-card">
             <span className="dot green"></span>
-            <p>Monitor T. Libre <br /> 300h</p>
+            <p>
+              Monitor T. Libre <br /> 300h
+            </p>
           </div>
           <div className="cert-card">
             <span className="dot green"></span>
-            <p>Riesgos Laborales <br /> 30h</p>
+            <p>
+              Riesgos Laborales <br /> 30h
+            </p>
           </div>
         </div>
       </section>
 
       <section id="sobre-mi" className="section">
         <h2>SOBRE MÍ</h2>
-        <p>Soy desarrolladora front-end con pasión por crear interfaces funcionales y atractivas, no solo funcionales sino que se sientan bien para el usuario.</p>
-        <p>Me gusta el código limpio, los retos técnicos y emprender de forma continua. Tengo experiencia en entornos de gran escala como BBVA Technology, donde la calidad y la metodología ágil son parte del día a día.</p>
-        <p>Cuento con habilitación para la docencia en FP y titulación como monitor de tiempo libre, lo que refina mi interés por transmitir conocimiento.</p>
+        <p>
+          Soy desarrolladora front-end con pasión por crear interfaces
+          funcionales y atractivas, no solo funcionales sino que se sientan bien
+          para el usuario.
+        </p>
+        <p>
+          Me gusta el código limpio, los retos técnicos y emprender de forma
+          continua. Tengo experiencia en entornos de gran escala como BBVA
+          Technology, donde la calidad y la metodología ágil son parte del día a
+          día.
+        </p>
+        <p>
+          Cuento con habilitación para la docencia en FP y titulación como
+          monitor de tiempo libre, lo que refina mi interés por transmitir
+          conocimiento.
+        </p>
         <h3>Aptitudes</h3>
         <ul className="aptitudes-tags">
           <li>Trabajo en equipo</li>
@@ -287,7 +356,9 @@ function App() {
       </section>
 
       <footer>
-        <p>Laura Zaballa - Front-End Developer © 2026 <br /> lau162.z@gmail.com</p>
+        <p>
+          Laura Zaballa - Front-End Developer © 2026 <br /> lau162.z@gmail.com
+        </p>
       </footer>
     </div>
   );
