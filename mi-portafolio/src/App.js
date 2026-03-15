@@ -73,7 +73,7 @@ function App() {
             </div>
             <div className="stat">
               <span className="stat-number">2</span>
-              <p>desarrollo de interfaces modernas de alto rendimiento.</p>
+              <p>Desarrollo de interfaces modernas de alto rendimiento.</p>
             </div>
             <div className="stat">
               <span className="stat-number">3</span>
@@ -88,10 +88,13 @@ function App() {
           <a href="#contacto">
             <button className="contact-btn">Contactar</button>
           </a>
-          <a href="#experiencia" className="see-experience">
-            Ver experiencia →
+             <a href="#experiencia" className="see-experience">
+                <button className="contact-btn">            Ver experiencia →
+</button>
+
           </a>
         </div>
+      
         <div className="profile-container">
           <img
             src={process.env.PUBLIC_URL + "/profile.jpg"}
@@ -100,6 +103,7 @@ function App() {
           />
           <span className="experience-badge">3 años de experiencia</span>
         </div>
+        
       </header>
 
       <section id="skills" className="section">
