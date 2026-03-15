@@ -68,7 +68,7 @@ function App() {
           <p>React · Angular · Web Components · JavaScript</p>
           <div className="stats">
             <div className="stat">
-              <span className="stat-number">3+</span>
+              <span className="stat-number">1</span>
               <p>Especialista en desarrollo web con +3 años de experiencia.</p>
             </div>
             <div className="stat">
@@ -76,7 +76,7 @@ function App() {
               <p>desarrollo de interfaces modernas de alto rendimiento.</p>
             </div>
             <div className="stat">
-              <span className="stat-number">15+</span>
+              <span className="stat-number">3</span>
               <p>He formado parte del equipo técnico de BBVA Technology.</p>
             </div>
           </div>
