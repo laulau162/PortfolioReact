@@ -88,13 +88,10 @@ function App() {
           <a href="#contacto">
             <button className="contact-btn">Contactar</button>
           </a>
-             <a href="#experiencia" className="see-experience">
-                <button className="contact-btn">            Ver experiencia →
-</button>
-
+          <a href="#experiencia" className="see-experience">
+            <button className="contact-btn">Ver experiencia →</button>
           </a>
         </div>
-      
         <div className="profile-container">
           <img
             src={process.env.PUBLIC_URL + "/profile.jpg"}
@@ -103,7 +100,7 @@ function App() {
           />
           <span className="experience-badge">3 años de experiencia</span>
         </div>
-        
+
       </header>
 
       <section id="skills" className="section">
