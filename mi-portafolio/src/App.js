@@ -1,4 +1,5 @@
 import "./App.css";
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEnvelope,
@@ -13,32 +14,53 @@ import {
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false); // estado para hamburguesa
+
   return (
     <div className="App">
+      {/* NAVBAR */}
       <nav className="navbar">
         <div className="logo">
           <span className="logo-icon">LZ</span>
           <span>Laura Zaballa - Front-End Developer</span>
         </div>
-        <ul className="nav-links">
+
+        {/* Links */}
+        <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
           <li>
-            <a href="#skills">Skills</a>
+            <a href="#skills" onClick={() => setMenuOpen(false)}>
+              Skills
+            </a>
           </li>
           <li>
-            <a href="#experiencia">Experiencia</a>
+            <a href="#experiencia" onClick={() => setMenuOpen(false)}>
+              Experiencia
+            </a>
           </li>
           <li>
-            <a href="#formacion">Formación</a>
+            <a href="#formacion" onClick={() => setMenuOpen(false)}>
+              Formación
+            </a>
           </li>
           <li>
-            <a href="#sobre-mi">Sobre Mí</a>
+            <a href="#sobre-mi" onClick={() => setMenuOpen(false)}>
+              Sobre Mí
+            </a>
           </li>
           <li>
-            <a href="#contacto">Contacto</a>
+            <a href="#contacto" onClick={() => setMenuOpen(false)}>
+              Contacto
+            </a>
           </li>
         </ul>
+
+        {/* Icono hamburguesa */}
+        <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+          {menuOpen ? "✕" : "☰"}
+        </div>
       </nav>
 
+      {/* HEADER */}
       <header className="header">
         <div className="header-content">
           <span className="available-badge">Disponible para nuevos retos</span>
@@ -71,8 +93,12 @@ function App() {
           </a>
         </div>
         <div className="profile-container">
-          <img src={process.env.PUBLIC_URL + '/profile.jpg'} class="profile-img" alt="Perfil" />
-          <span className="experience-badge">3 años</span>
+          <img
+            src={process.env.PUBLIC_URL + "/profile.jpg"}
+            className="profile-img"
+            alt="Perfil"
+          />
+          <span className="experience-badge">3 años de experiencia</span>
         </div>
       </header>
 
