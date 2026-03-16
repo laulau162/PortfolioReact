@@ -381,7 +381,7 @@ function App() {
 
       <footer>
         <p>
-          Laura Zaballa - Front-End Developer © 2026 <br /> lau162.z@gmail.com
+          Laura Zaballa - Front-End Developer © {new Date().getFullYear()} <br /> lau162.z@gmail.com
         </p>
       </footer>
     </div>
